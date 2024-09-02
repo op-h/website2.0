@@ -1,8 +1,4 @@
-Certainly! Here’s the description of the website and its application in English:
-
----
-
- Website and Application Overview:
+Website and Application Overview:
 
 1. Main Purpose of the Website:
 
