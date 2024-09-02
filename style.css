@@ -1,0 +1,170 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  min-height: 100%;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #5cb85c; /* Green border around the entire webpage */
+  box-sizing: border-box;
+}
+
+#site-container {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 90vh; /* Ensure the container takes up at least 90% of viewport height */
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #1e1e1e; /* Background color of the container */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  background-color: #2a2a2a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5vw;
+  margin: 0;
+  color: #5cb85c;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.contact-info a {
+  color: #5cb85c;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #4a4a4a;
+}
+
+.contact-info img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+  vertical-align: middle;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.program-box {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  color: #e0e0e0;
+  border: 2px solid #5cb85c; /* Green border around the program box */
+}
+
+.program-box h2 {
+  font-size: 1.8em;
+  color: #5cb85c;
+  margin: 0;
+}
+
+.conversion-inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.conversion-inputs .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #5cb85c; /* Green border around input groups */
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+}
+
+.conversion-inputs select, .conversion-inputs input {
+  font-size: 1em;
+  padding: 8px;
+  background-color: #333;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 250px;
+}
+
+.conversion-inputs select:focus, .conversion-inputs input:focus {
+  outline: none;
+  background-color: #5cb85c;
+}
+
+.conversion-inputs input[readonly] {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 3.5vw;
+  }
+  .conversion-inputs select, .conversion-inputs input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 5vw;
+  }
+  p {
+    font-size: 4.5vw;
+  }
+  .conversion-inputs select, .conversion-inputs input {
+    width: 100%;
+  }
+}
